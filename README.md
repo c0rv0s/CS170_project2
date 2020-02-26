@@ -1,5 +1,6 @@
 # Feature Selection
 Find the most relevant labels for predicting classes via nearest neighbor using forward and backward search. I also developed an optimized forward search with the same results but better run time.
+Datasets such as the Iris dataset from UC Irvine work excellently with this code.
 
 ## Comparison of Algorithms
 
@@ -13,4 +14,4 @@ Backward search runs longer than forward search because it is using more feature
 ## My Special Algorithm
 My special algorithm is simply forward search with an added exit case: if the current iteration has more wrong predictions than the best case so far, it will terminate since it is impossible for this feature to be result in a better accuracy. This shaves a significant amount of time off the algorithm’s run time. It does not affect accuracy.
 
-Datasets such as the Iris dataset from UC Irvine work excellently with this code.
+
